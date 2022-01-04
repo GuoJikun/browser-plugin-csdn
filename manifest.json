@@ -1,0 +1,30 @@
+{
+  "name": "Copy",
+  "version": "0.0.0.1",
+  "manifest_version": 2,
+  "description": "让浏览器上的文字可以复制",
+  "browser_action": {
+    "default_title": "将页面不可复制的内容变为可复制",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://blog.csdn.net/*"],
+      "js": ["content_scripts/csdn.js"]
+    },
+    {
+      "matches": ["*://*/*"],
+      "js": ["content_scripts/copy.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background/toggle-javascript.js"]
+  },
+  "permissions": [
+    "storage",
+    "contentSettings",
+    "contextMenus",
+    "activeTab",
+    "notifications"
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        border-radius: 4px;
+      }
+      body {
+        margin: 0;
+        font-size: 14px;
+        font-family: "Helvetica Neue", Helvetica, "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+      }
+      .root {
+        width: 160px;
+        padding: 6px 0;
+      }
+      .root-item {
+        line-height: 34px;
+        padding: 0 20px;
+        cursor: pointer;
+      }
+      .root-item:hover {
+        color: white;
+        background-color: #409eff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      <div class="root-item" value="1">开启</div>
+      <div class="root-item" value="0">关闭</div>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
