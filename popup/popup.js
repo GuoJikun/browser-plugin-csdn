@@ -24,4 +24,5 @@ root.addEventListener("click", (ev) => {
   } else {
     sendMessageToContent({ value: 0 });
   }
+  window.close();
 });
