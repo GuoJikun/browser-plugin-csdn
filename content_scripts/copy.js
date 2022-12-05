@@ -10,6 +10,7 @@
   window.hasRun = true;
 
   chrome.runtime.onMessage.addListener((data, sender) => {
+    document.body.style.filter = "unset !important";
     if (data.value === 1) {
       document.designMode = "on";
     } else {
