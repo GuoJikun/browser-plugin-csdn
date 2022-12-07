@@ -1,8 +1,8 @@
 {
-  "name": "Copy",
-  "version": "0.0.0.1",
+  "name": "Toolbox",
+  "version": "0.0.1",
   "manifest_version": 3,
-  "description": "让浏览器上的文字可以复制",
+  "description": "web工具箱",
   "action": {
     "default_title": "将页面不可复制的内容变为可复制",
     "default_popup": "popup/popup.html"
