@@ -2,8 +2,6 @@
 
 let tab;
 
-console.log(document, "document");
-
 const notify = (message) =>
   chrome.notifications.create({
     title: chrome.runtime.getManifest().name,
